@@ -7,18 +7,16 @@ import ReactDOM from 'react-dom'
 function Greeting() {
   return (
     <div>
-      <h3>hello people</h3>
-      <ul>
-        <li>
-          <a href=''>hello world</a>
-        </li>
-      </ul>
+      <Person />
+      <Message />
     </div>
   )
 }
 
-// const Greeting = () => {
-//  return React.createElement('h1',{},'hello wold')
-// }
-
+const Person = () => {
+  return <h2>john doe</h2>
+}
+const Message = () => {
+  return <p>This is my message</p>
+}
 ReactDOM.render(<Greeting />, document.getElementById('root'))

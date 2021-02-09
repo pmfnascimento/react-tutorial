@@ -18,6 +18,7 @@ _____________
   - Tell React what you want and React will build actual UI<br/>
   - React will handle efficiently updating and reanding of the components<br/>
   - DOM updates are handles gracefully in React<br/>
+_____________
 
 #### More on why React?
 
@@ -25,9 +26,12 @@ _____________
 - Portion of you page or a complete page or even an entire application itself<br/>
 - React Native for native applications<br/>
 
+_____________
 
 ### React Tutorial - Fundamentals, Hooks, Context API, React Router, Custom Hooks
 
 #### 1 - First Component
 #### 2 - First Component in Detail
 #### 3 - JSX Rules
+#### 4 - Nested Components, React Tools
+#### 5 - Mini Book Project
