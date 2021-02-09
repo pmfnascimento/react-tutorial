@@ -1,35 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// Css
+// CSS
 import './index.css'
-const books = [
-  {
-    id: 1,
-    author: 'Hardcover – May 26, 2020',
-    title: 'Breath: The New Science of a Lost Art',
-    img:
-      'https://images-na.ssl-images-amazon.com/images/I/41o5B3nR1gL._SX329_BO1,204,203,200_.jpg',
-  },
-  {
-    id: 2,
-    author: 'Hardcover – October 20, 2020',
-    title: 'The Wim Hof Method: Activate Your Full Human Potential',
-    img:
-      'https://images-na.ssl-images-amazon.com/images/I/51ADdE1GjZL._SX329_BO1,204,203,200_.jpg',
-  },
-  {
-    id: 3,
-    author: 'Wim Hof (Foreword)',
-    title:
-      "What Doesn't Kill Us: How Freezing Water, Extreme Altitude",
-    img:
-      'https://images-na.ssl-images-amazon.com/images/I/519GjbqPb7L._SX331_BO1,204,203,200_.jpg',
-  },
-]
+// Books
+import { books } from './books'
 
+import Book from './Book'
+import { greeting } from './testing/testing'
 
 function BookList() {
+    console.log(greeting)
   return (
     <section className='booklist'>
       {books.map((book, index) => {
@@ -38,32 +19,5 @@ function BookList() {
     </section>
   )
 }
-
-const Book = ({ img, title, author }) => {
-  // attribute, eventHandler
-  // onClick, onMouseOver
-  const clickHandler = (e) => {
-    console.log(e);
-    console.log(e.target)
-    alert('Hello World');
-  }
-  const complexExample = (author) => {
-    console.log(author);
-  }
-  return (
-    <article className='book' onMouseOver={() => {
-      console.log(title);
-    }}>
-      <img src={img} alt={title} height={300} />
-      <h1 onClick={() => console.log(title)}>{title}</h1>
-      <h4>{author}</h4>
-      <button type='button' onClick={clickHandler}>
-        Reference Example
-      </button>
-      <button type="button" onClick={() => complexExample(author)}>more complex example</button>
-    </article>
-  )
-}
-
 
 ReactDOM.render(<BookList />, document.getElementById('root'))
