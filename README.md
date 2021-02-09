@@ -37,3 +37,4 @@ _____________
 #### 5 - Mini Book Project
 #### 5.1 - CSS Basics
 #### 5.2 - JSX CSS
+#### 5.3 - JSX Javascript
