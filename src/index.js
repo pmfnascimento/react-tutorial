@@ -19,9 +19,10 @@ const books = [
       'https://images-na.ssl-images-amazon.com/images/I/51ADdE1GjZL._SX329_BO1,204,203,200_.jpg',
   },
   {
-    id:   3,
+    id: 3,
     author: 'Wim Hof (Foreword)',
-    title: "What Doesn't Kill Us",
+    title:
+      "What Doesn't Kill Us: How Freezing Water, Extreme Altitude",
     img:
       'https://images-na.ssl-images-amazon.com/images/I/519GjbqPb7L._SX331_BO1,204,203,200_.jpg',
   },
@@ -38,13 +39,28 @@ function BookList() {
   )
 }
 
-const Book = (props) => {
-  const { img, title, author } = props
+const Book = ({ img, title, author }) => {
+  // attribute, eventHandler
+  // onClick, onMouseOver
+  const clickHandler = (e) => {
+    console.log(e);
+    console.log(e.target)
+    alert('Hello World');
+  }
+  const complexExample = (author) => {
+    console.log(author);
+  }
   return (
-    <article className='book'>
+    <article className='book' onMouseOver={() => {
+      console.log(title);
+    }}>
       <img src={img} alt={title} height={300} />
-      <h1>{title}</h1>
+      <h1 onClick={() => console.log(title)}>{title}</h1>
       <h4>{author}</h4>
+      <button type='button' onClick={clickHandler}>
+        Reference Example
+      </button>
+      <button type="button" onClick={() => complexExample(author)}>more complex example</button>
     </article>
   )
 }
