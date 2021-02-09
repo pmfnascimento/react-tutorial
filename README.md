@@ -35,3 +35,4 @@ _____________
 #### 3 - JSX Rules
 #### 4 - Nested Components, React Tools
 #### 5 - Mini Book Project
+#### 5.1 - CSS Basics
