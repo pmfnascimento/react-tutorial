@@ -30,3 +30,4 @@ _____________
 
 #### 1 - First Component
 #### 2 - First Component in Detail
+#### 3 - JSX Rules
