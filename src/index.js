@@ -35,7 +35,13 @@ const Image = () => {
 }
 
 const Author = () => {
-  return <h4>Hardcover – May 26, 2020</h4>
+  return (
+    <h4
+      style={{ color: '#617d98w', fontSize: '0.75rem', marginTop: '0.25rem' }}
+    >
+      Hardcover – May 26, 2020
+    </h4>
+  )
 }
 
 const Title = () => {
