@@ -34,9 +34,10 @@ _____________
 #### 2 - First Component in Detail
 #### 3 - JSX Rules
 #### 4 - Nested Components, React Tools
-#### 5 - Mini Book Project
-#### 5.1 - CSS Basics
-#### 5.2 - JSX CSS
-#### 5.3 - JSX Javascript
-#### 5.4 - Props
-#### 5.4 - Props Destructing
+#### 5 - CSS Basics
+#### 6 - JSX CSS
+#### 7 - JSX Javascript
+#### 8 - Props
+#### 9. - Props Destructing
+#### 10 - Props Children
+#### 11 - Simple List

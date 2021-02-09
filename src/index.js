@@ -29,16 +29,22 @@ function BookList() {
         title={secoundBook.title}
         author={secoundBook.author}
         img={secoundBook.img}
-      />
+      >
+        <p>
+          "I invite you to witness your own being blossoming, to push past your
+          conditioning. This method is accessible to all."
+        </p>
+      </Book>
     </section>
   )
 }
 
-const Book = ({ img, title, author }) => {
-  //const { img, title, author } = props
+const Book = (props) => {
+  const { img, title, author, children } = props
   return (
     <article className='book'>
       <img src={img} alt='' height={300} />
+      {children}
       <h1>{title}</h1>
       <h4>{author}</h4>
     </article>
