@@ -39,3 +39,4 @@ _____________
 #### 5.2 - JSX CSS
 #### 5.3 - JSX Javascript
 #### 5.4 - Props
+#### 5.4 - Props Destructing
